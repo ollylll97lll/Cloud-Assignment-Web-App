@@ -48,7 +48,8 @@ nav li {
         background-color: #9D9D93;
         border-radius: 2em;
         list-style-type: none;
-        margin: 0.3em;
+        margin-left: 10vw;
+        margin-top: 10vh;
         padding: 0.4em;
 }
 
@@ -150,6 +151,27 @@ form ul {
 /*style for social media icons */
 #social img {
   padding: 0.5em;
+}
+
+
+#banner{
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+}
+#banner h1{
+  font-size: 4vw;
+  color: #EED9B7;
+  line-height: 600px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /*media query for tablet viewport target screen size with a minium width of 660px. */
@@ -364,6 +386,7 @@ label{
 
 @media only screen and (min-width: 830px){
 
+
   /* style specifies a width for container */
   #container {
     background-color: #1D1D1C;
@@ -519,7 +542,5 @@ table{
   form p{
     color: #000000;
   }
-
-}
 
 }
