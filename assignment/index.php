@@ -14,18 +14,12 @@ $fName = $_POST['fName'];
 $lName = $_POST['lName'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-if (isset($_POST['luxury_wd'])) $luxury_wd = true;
-else $luxury_wd = false;
-if (isset($_POST['responsive_wd'])) $responsive_wd = true;
-else $responsive_wd = false;
-if (isset($_POST['web_mobile'])) $web_mobile = true;
-else $web_mobile = false;
 
 $reference = $_POST['reference'];
 $questions = $_POST['questions'];
 
-$query = "INSERT into web_design_consult(fname, lname, email, phone, luxury_wd, responsive_wd, web_mobile, reference, questions)
-VALUES('$fName', '$lName', '$email', '$phone', '$luxury_wd', '$responsive_wd', '$web_mobile', '$reference', '$questions')";
+$query = "INSERT into web_design_consult(fname, lname, email, phone, reference, questions)
+VALUES('$fName', '$lName', '$email', '$phone', '$reference', '$questions')";
 
 $results = $conn->query($query);
 
