@@ -1,7 +1,9 @@
 <?php
 include_once("Home.html");
+mysql_connect('localhost','root','');
+mysql_select_db('cloudweb_db');
 $hostname = 'localhost';
-$database = 'web_designdb';
+$database = 'cloudweb_db';
 $username = 'root';
 $password = '';
 
@@ -24,7 +26,7 @@ $phone = $_POST['phone'];
 $reference = $_POST['reference'];
 $questions = $_POST['questions'];
 
-$query = "INSERT into web_design_consult(fname, lname, email, phone, createweb, hire, moreinfo, reference, questions)
+$query = "INSERT into consult(fname, lname, email, phone, createweb, hire, moreinfo, reference, questions)
 VALUES('$fName', '$lName', '$email', '$phone', '$createweb', '$hire', '$moreinfo', '$reference', '$questions')";
 
 $results = $conn->query($query);
@@ -37,7 +39,7 @@ else {
   echo " insert successfully"."<br/>";
 }
 
-$query = "select * from web_design_consult";
+$query = "select * from consult";
 $results = $conn->query($query);
 
 if (!$results) {
