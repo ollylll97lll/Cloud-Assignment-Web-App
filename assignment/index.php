@@ -1,4 +1,5 @@
 <?php
+include_once("Home.html");
 $hostname = 'localhost';
 $database = 'web_designdb';
 $username = 'root';
