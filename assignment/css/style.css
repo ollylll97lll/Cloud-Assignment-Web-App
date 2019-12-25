@@ -76,6 +76,7 @@ main {
   font-size: 1em;
   margin-top: 20px;
   padding: 20px;
+  width: 100%;
   border-radius: 2em 0 2em 0;
   background-color: #FFFFFF;
   opacity: 0.85;
