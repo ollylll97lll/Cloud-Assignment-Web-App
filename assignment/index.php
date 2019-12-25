@@ -1,7 +1,5 @@
 <?php
 include_once("Home.html");
-mysql_connect('localhost','root','');
-mysql_select_db('cloudweb_db');
 $hostname = 'localhost';
 $database = 'cloudweb_db';
 $username = 'root';
